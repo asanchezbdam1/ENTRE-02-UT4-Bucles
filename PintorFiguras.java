@@ -22,9 +22,7 @@ public class PintorFiguras
     public void dibujarFigura(int altura) {
         for (int i = 1; i <= altura; i++) {
             int espacios = (altura - i) * ANCHO_BLOQUE / 2;
-            for (int j = 0; j < espacios; j++) {
-                System.out.print(ESPACIO);
-            }
+            escribirEspacios(ESPACIO, espacios);
             
             for (int j = 0; j < i; j++) {
                 for (int k = 0; k < ANCHO_BLOQUE; k++) {
@@ -45,6 +43,9 @@ public class PintorFiguras
      */
     private  void escribirEspacios(char caracter, int n) {
          
+            for (int j = 0; j < n; j++) {
+                System.out.print(caracter);
+            }
 
     }
 }
