@@ -42,7 +42,7 @@ public class IUTexto
     {
         char opcion = ' ';
         do {
-            System.out.println('\u000C');
+            Pantalla.borrarPantalla();
             System.out.print("Teclee número1: ");
             int n1 = teclado.nextInt();
             teclado.nextLine();
@@ -83,6 +83,7 @@ public class IUTexto
 
     private void dibujarFiguras()
     {
+        Pantalla.borrarPantalla();
         System.out.println("¿Altura de la figura? (1-10) ");
         int n = teclado.nextInt();
         teclado.nextLine();
